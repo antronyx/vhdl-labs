@@ -1,0 +1,33 @@
+--file 4bitctr.vhd
+LIBRARY ieee;
+use ieee.std_logic_1164.all;
+
+entity bit16ctr is
+PORT(EN,CLEAR,CLK:IN STD_LOGIC;
+		COUNT:OUT STD_LOGIC_VECTOR(3 DOWNTO 0));
+end bit16ctr;
+
+ARCHITECTURE be of bit16ctr is
+
+SIGNAL q:STD_LOGIC_VECTOR(0 TO 15);
+  
+SIGNAL t1,t2,t3: std_logic;
+SIGNAL t:STD_LOGIC_VeCTOR(1 TO 15);
+
+COMPONENT tflipflop
+  port (T,RST,CLK,EN: in std_logic;
+						 Q: out std_logic);
+END COMPONENT;
+
+
+BEGIN
+	ff0: tflipflop PORT MAP(EN,CLEAR,CLK,'1',q(0));
+	COUNT(0)<=q(0);
+	t(1)<=EN and q(0);
+for I in 1 to 15 loop
+	ffI: tflipflop PORT MAP(t(I),CLEAR,CLK,'1',q(I));
+	COUNT(I)<=q(I);
+	t(I+1)<=EN and q(I);
+		
+	end loop;
+END be;

@@ -1,0 +1,22 @@
+--mux2to1.vhd file
+--Created by Antonino Cacicia on 20/03/2019 at 23:00
+
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY mux2to1 IS
+	PORT( X: IN STD_LOGIC_VECTOR (2 DOWNTO 0);
+			Y: IN STD_LOGIC_VECTOR (2 DOWNTO 0);
+			SEL: IN STD_LOGIC;
+			Z: OUT STD_LOGIC_VECTOR (2 DOWNTO 0));
+	
+END mux2to1;
+
+ARCHITECTURE Behaviour OF mux2to1 IS
+
+BEGIN
+	Z(2)<= ((NOT SEL) AND X(2)) OR (SEL AND Y(2));
+	Z(1)<= ((NOT SEL) AND X(1)) OR (SEL AND Y(1));
+	Z(0)<= ((NOT SEL) AND X(0)) OR (SEL AND Y(0));
+
+END Behaviour;

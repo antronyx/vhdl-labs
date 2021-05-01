@@ -1,0 +1,253 @@
+|bit16ctr
+EN => FU_CTR:FU_CTR0.A
+CLEAR => FU_CTR:FU_CTR0.CLEAR
+CLEAR => FU_CTR:gen_FU:1:ffI.CLEAR
+CLEAR => FU_CTR:gen_FU:2:ffI.CLEAR
+CLEAR => FU_CTR:gen_FU:3:ffI.CLEAR
+CLEAR => FU_CTR:gen_FU:4:ffI.CLEAR
+CLEAR => FU_CTR:gen_FU:5:ffI.CLEAR
+CLEAR => FU_CTR:gen_FU:6:ffI.CLEAR
+CLEAR => FU_CTR:gen_FU:7:ffI.CLEAR
+CLEAR => FU_CTR:gen_FU:8:ffI.CLEAR
+CLEAR => FU_CTR:gen_FU:9:ffI.CLEAR
+CLEAR => FU_CTR:gen_FU:10:ffI.CLEAR
+CLEAR => FU_CTR:gen_FU:11:ffI.CLEAR
+CLEAR => FU_CTR:gen_FU:12:ffI.CLEAR
+CLEAR => FU_CTR:gen_FU:13:ffI.CLEAR
+CLEAR => FU_CTR:gen_FU:14:ffI.CLEAR
+CLEAR => tflipflop:ff15.RST
+CLK => FU_CTR:FU_CTR0.CLK
+CLK => FU_CTR:gen_FU:1:ffI.CLK
+CLK => FU_CTR:gen_FU:2:ffI.CLK
+CLK => FU_CTR:gen_FU:3:ffI.CLK
+CLK => FU_CTR:gen_FU:4:ffI.CLK
+CLK => FU_CTR:gen_FU:5:ffI.CLK
+CLK => FU_CTR:gen_FU:6:ffI.CLK
+CLK => FU_CTR:gen_FU:7:ffI.CLK
+CLK => FU_CTR:gen_FU:8:ffI.CLK
+CLK => FU_CTR:gen_FU:9:ffI.CLK
+CLK => FU_CTR:gen_FU:10:ffI.CLK
+CLK => FU_CTR:gen_FU:11:ffI.CLK
+CLK => FU_CTR:gen_FU:12:ffI.CLK
+CLK => FU_CTR:gen_FU:13:ffI.CLK
+CLK => FU_CTR:gen_FU:14:ffI.CLK
+CLK => tflipflop:ff15.CLK
+
+
+|bit16ctr|FU_CTR:FU_CTR0
+A => B.IN1
+A => tflipflop:ff.T
+CLEAR => tflipflop:ff.RST
+CLK => tflipflop:ff.CLK
+
+
+|bit16ctr|FU_CTR:FU_CTR0|tflipflop:ff
+T => temp.IN1
+RST => temp.OUTPUTSELECT
+CLK => temp.CLK
+EN => temp.OUTPUTSELECT
+
+
+|bit16ctr|FU_CTR:\gen_FU:1:ffI
+A => B.IN1
+A => tflipflop:ff.T
+CLEAR => tflipflop:ff.RST
+CLK => tflipflop:ff.CLK
+
+
+|bit16ctr|FU_CTR:\gen_FU:1:ffI|tflipflop:ff
+T => temp.IN1
+RST => temp.OUTPUTSELECT
+CLK => temp.CLK
+EN => temp.OUTPUTSELECT
+
+
+|bit16ctr|FU_CTR:\gen_FU:2:ffI
+A => B.IN1
+A => tflipflop:ff.T
+CLEAR => tflipflop:ff.RST
+CLK => tflipflop:ff.CLK
+
+
+|bit16ctr|FU_CTR:\gen_FU:2:ffI|tflipflop:ff
+T => temp.IN1
+RST => temp.OUTPUTSELECT
+CLK => temp.CLK
+EN => temp.OUTPUTSELECT
+
+
+|bit16ctr|FU_CTR:\gen_FU:3:ffI
+A => B.IN1
+A => tflipflop:ff.T
+CLEAR => tflipflop:ff.RST
+CLK => tflipflop:ff.CLK
+
+
+|bit16ctr|FU_CTR:\gen_FU:3:ffI|tflipflop:ff
+T => temp.IN1
+RST => temp.OUTPUTSELECT
+CLK => temp.CLK
+EN => temp.OUTPUTSELECT
+
+
+|bit16ctr|FU_CTR:\gen_FU:4:ffI
+A => B.IN1
+A => tflipflop:ff.T
+CLEAR => tflipflop:ff.RST
+CLK => tflipflop:ff.CLK
+
+
+|bit16ctr|FU_CTR:\gen_FU:4:ffI|tflipflop:ff
+T => temp.IN1
+RST => temp.OUTPUTSELECT
+CLK => temp.CLK
+EN => temp.OUTPUTSELECT
+
+
+|bit16ctr|FU_CTR:\gen_FU:5:ffI
+A => B.IN1
+A => tflipflop:ff.T
+CLEAR => tflipflop:ff.RST
+CLK => tflipflop:ff.CLK
+
+
+|bit16ctr|FU_CTR:\gen_FU:5:ffI|tflipflop:ff
+T => temp.IN1
+RST => temp.OUTPUTSELECT
+CLK => temp.CLK
+EN => temp.OUTPUTSELECT
+
+
+|bit16ctr|FU_CTR:\gen_FU:6:ffI
+A => B.IN1
+A => tflipflop:ff.T
+CLEAR => tflipflop:ff.RST
+CLK => tflipflop:ff.CLK
+
+
+|bit16ctr|FU_CTR:\gen_FU:6:ffI|tflipflop:ff
+T => temp.IN1
+RST => temp.OUTPUTSELECT
+CLK => temp.CLK
+EN => temp.OUTPUTSELECT
+
+
+|bit16ctr|FU_CTR:\gen_FU:7:ffI
+A => B.IN1
+A => tflipflop:ff.T
+CLEAR => tflipflop:ff.RST
+CLK => tflipflop:ff.CLK
+
+
+|bit16ctr|FU_CTR:\gen_FU:7:ffI|tflipflop:ff
+T => temp.IN1
+RST => temp.OUTPUTSELECT
+CLK => temp.CLK
+EN => temp.OUTPUTSELECT
+
+
+|bit16ctr|FU_CTR:\gen_FU:8:ffI
+A => B.IN1
+A => tflipflop:ff.T
+CLEAR => tflipflop:ff.RST
+CLK => tflipflop:ff.CLK
+
+
+|bit16ctr|FU_CTR:\gen_FU:8:ffI|tflipflop:ff
+T => temp.IN1
+RST => temp.OUTPUTSELECT
+CLK => temp.CLK
+EN => temp.OUTPUTSELECT
+
+
+|bit16ctr|FU_CTR:\gen_FU:9:ffI
+A => B.IN1
+A => tflipflop:ff.T
+CLEAR => tflipflop:ff.RST
+CLK => tflipflop:ff.CLK
+
+
+|bit16ctr|FU_CTR:\gen_FU:9:ffI|tflipflop:ff
+T => temp.IN1
+RST => temp.OUTPUTSELECT
+CLK => temp.CLK
+EN => temp.OUTPUTSELECT
+
+
+|bit16ctr|FU_CTR:\gen_FU:10:ffI
+A => B.IN1
+A => tflipflop:ff.T
+CLEAR => tflipflop:ff.RST
+CLK => tflipflop:ff.CLK
+
+
+|bit16ctr|FU_CTR:\gen_FU:10:ffI|tflipflop:ff
+T => temp.IN1
+RST => temp.OUTPUTSELECT
+CLK => temp.CLK
+EN => temp.OUTPUTSELECT
+
+
+|bit16ctr|FU_CTR:\gen_FU:11:ffI
+A => B.IN1
+A => tflipflop:ff.T
+CLEAR => tflipflop:ff.RST
+CLK => tflipflop:ff.CLK
+
+
+|bit16ctr|FU_CTR:\gen_FU:11:ffI|tflipflop:ff
+T => temp.IN1
+RST => temp.OUTPUTSELECT
+CLK => temp.CLK
+EN => temp.OUTPUTSELECT
+
+
+|bit16ctr|FU_CTR:\gen_FU:12:ffI
+A => B.IN1
+A => tflipflop:ff.T
+CLEAR => tflipflop:ff.RST
+CLK => tflipflop:ff.CLK
+
+
+|bit16ctr|FU_CTR:\gen_FU:12:ffI|tflipflop:ff
+T => temp.IN1
+RST => temp.OUTPUTSELECT
+CLK => temp.CLK
+EN => temp.OUTPUTSELECT
+
+
+|bit16ctr|FU_CTR:\gen_FU:13:ffI
+A => B.IN1
+A => tflipflop:ff.T
+CLEAR => tflipflop:ff.RST
+CLK => tflipflop:ff.CLK
+
+
+|bit16ctr|FU_CTR:\gen_FU:13:ffI|tflipflop:ff
+T => temp.IN1
+RST => temp.OUTPUTSELECT
+CLK => temp.CLK
+EN => temp.OUTPUTSELECT
+
+
+|bit16ctr|FU_CTR:\gen_FU:14:ffI
+A => B.IN1
+A => tflipflop:ff.T
+CLEAR => tflipflop:ff.RST
+CLK => tflipflop:ff.CLK
+
+
+|bit16ctr|FU_CTR:\gen_FU:14:ffI|tflipflop:ff
+T => temp.IN1
+RST => temp.OUTPUTSELECT
+CLK => temp.CLK
+EN => temp.OUTPUTSELECT
+
+
+|bit16ctr|tflipflop:ff15
+T => temp.IN1
+RST => temp.OUTPUTSELECT
+CLK => temp.CLK
+EN => temp.OUTPUTSELECT
+
+

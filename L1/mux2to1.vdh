@@ -1,0 +1,47 @@
+
+-- Implementation of a MUX2TO1 8-bit wide on Altera DE2 board--
+-- Created by Antonino Cacicia at 15/03/2019 - 16:45 --
+-- Remember to include the file pin assignment before compiling --
+
+LIBRARY IEEE;
+
+USE IEEE.STD_LOGIC_1164.ALL;
+
+
+
+ENTITY mux2to1 IS
+    
+
+-- Declaring all the Altera DE2 PINs --
+
+PORT ( 	SW : IN STD_LOGIC_VECTOR(17 DOWNTO 0);
+
+		LEDR : OUT STD_LOGIC_VECTOR(17 DOWNTO 0);
+		LEDG: OUT STD_LOGIC_VECTOR(7 DOWNTO 0));
+END mux2to1;
+
+
+
+
+ARCHITECTURE behavior of mux2to1 is
+	
+	SIGNAL X: STD_LOGIC_VECTOR (7 DOWNTO 0);
+	SIGNAL Y: STD_LOGIC_VECTOR (7 DOWNTO 0);
+	SIGNAL SEL: STD_LOGIC;
+	SIGNAL M: STD_LOGIC_VECTOR (7 DOWNTO 0);
+BEGIN
+
+	SEL<=SW(17) -- Set SEL to DE2's SW(17)
+	LEDR<=SW; --Turn on the upper LED	
+	-- Bit Switch assignment --
+	Y<=SW(15) & SW(14) & SW(13) & SW(12) & SW(11) & SW(10) & SW(9) & SW(8);
+	X<=SW(7) & SW(6) & SW(5) & SW(4) & SW(3) & SW(2) & SW(1) & SW(0);
+
+	-- Logic --
+	M <= X when (SEL = '0') else Y;
+
+
+	-- Output --
+	LEDG<=M;
+
+END behavior;

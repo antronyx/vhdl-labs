@@ -1,0 +1,169 @@
+Quartus II
+Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Web Edition
+14
+1076
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+tflipflop
+# storage
+db|es2.(0).cnf
+db|es2.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+tflipflop.vhd
+4c787056306178da5754c3432616ef6c
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+FU_CTR:FU_CTR0|tflipflop:ff
+FU_CTR:\gen_FU:1:ffI|tflipflop:ff
+FU_CTR:\gen_FU:2:ffI|tflipflop:ff
+FU_CTR:\gen_FU:3:ffI|tflipflop:ff
+FU_CTR:\gen_FU:4:ffI|tflipflop:ff
+FU_CTR:\gen_FU:5:ffI|tflipflop:ff
+FU_CTR:\gen_FU:6:ffI|tflipflop:ff
+FU_CTR:\gen_FU:7:ffI|tflipflop:ff
+FU_CTR:\gen_FU:8:ffI|tflipflop:ff
+FU_CTR:\gen_FU:9:ffI|tflipflop:ff
+FU_CTR:\gen_FU:10:ffI|tflipflop:ff
+FU_CTR:\gen_FU:11:ffI|tflipflop:ff
+FU_CTR:\gen_FU:12:ffI|tflipflop:ff
+FU_CTR:\gen_FU:13:ffI|tflipflop:ff
+FU_CTR:\gen_FU:14:ffI|tflipflop:ff
+tflipflop:ff15
+}
+# macro_sequence
+
+# end
+# entity
+bit4ctr
+# storage
+db|es2.(1).cnf
+db|es2.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+bit4ctr.vhd
+3a95a70cc681569f3768affd9d4312
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# macro_sequence
+
+# end
+# entity
+bit16ctr
+# storage
+db|es2.(2).cnf
+db|es2.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+bit16ctr.vhd
+cbd79c4c0257264ba36dfec57bdfa1
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+FU_CTR
+# storage
+db|es2.(3).cnf
+db|es2.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+fu_ctr.vhd
+5be01f857d9725b22ddac22fb80668e
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+FU_CTR:FU_CTR0
+FU_CTR:\gen_FU:1:ffI
+FU_CTR:\gen_FU:2:ffI
+FU_CTR:\gen_FU:3:ffI
+FU_CTR:\gen_FU:4:ffI
+FU_CTR:\gen_FU:5:ffI
+FU_CTR:\gen_FU:6:ffI
+FU_CTR:\gen_FU:7:ffI
+FU_CTR:\gen_FU:8:ffI
+FU_CTR:\gen_FU:9:ffI
+FU_CTR:\gen_FU:10:ffI
+FU_CTR:\gen_FU:11:ffI
+FU_CTR:\gen_FU:12:ffI
+FU_CTR:\gen_FU:13:ffI
+FU_CTR:\gen_FU:14:ffI
+}
+# macro_sequence
+
+# end
+# complete
+
